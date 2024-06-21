@@ -2,8 +2,10 @@ import pytest
 from fastapi.testclient import TestClient
 from main import app
 from unittest.mock import patch
+from unittest import mock
 from datetime import datetime, timedelta
 import sqlite3
+import jwt
 
 client = TestClient(app)
 
